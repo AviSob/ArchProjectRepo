@@ -57,6 +57,8 @@ services:
 # storage
   storage:
     image: storage 
+    links:
+      - db
     ports:
       - "8090:8090"
     depends_on:
